@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========= Font awesome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- =========== Google fonts============== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ======== Css========= -->
+    <link rel="stylesheet" href="/css/style.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="logo_text"><span>Ham</span>BLOG</h1>
+        <div class="logo">
+            <h1 class="logo-text"><span>Ham</span>BLOG</h1>
         </div>
-        <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Services</li>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
             <!-- <li><a href="#"></a>Sign up</li>
             <li><a href="#"></a>Login</li> -->
-            <li><a href="#"></a>Hamada bachar</li>
+            <li>
+                <a href="#">Hamada Bachar</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
         </ul>
     </header>
 </body>
