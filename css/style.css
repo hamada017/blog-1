@@ -7,6 +7,10 @@ body{
     background: #f6f6f6;
     font-family: 'lora', serif;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'candal', serif;
+    color: #444;
+}
 header{
     background: #008489;
     height: 66px;
@@ -76,6 +80,47 @@ header ul li a:hover{
 header .menu-toggle{
     display: none;
 }
+/* ============  POST SLIDER ============ */
+
+.post-slider{
+    position: relative;
+    border: 1px solid red;
+
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.post-slider .next{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    border: 1px dashed red;
+}
+.post-slider .post-wrapper .post{
+    width: 300px;
+    height: 350px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: #0ce9f1;
+}
 
 /* ========= responsvie for 750 screen ============= */
 
@@ -89,6 +134,9 @@ header .menu-toggle{
         max-height: 0px;
         overflow: hidden;
     }
+    .showing{
+        max-height: 100em;
+    }
     header ul li{
         width: 100%;
     }
@@ -96,6 +144,9 @@ header .menu-toggle{
         position: static;
         display: block;
         width: 100%;
+    }
+    header ul li ul li a:hover{
+        background-color: #006669;
     }
     header ul li ul li a{
         padding: 10px;
