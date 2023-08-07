@@ -121,10 +121,13 @@ header .menu-toggle{
     margin: 0px 10px;
     display: inline-block;
     background: white;
+    border-radius: 5px;
 }
 .post-slider .post-wrapper .post .slider-image{
     width: 100%;
     height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* ========= responsvie for 750 screen ============= */
