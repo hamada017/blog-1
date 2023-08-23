@@ -121,7 +121,7 @@ header .menu-toggle{
 }
 
 .page-wrapper{
-    min-width: 100%;
+    min-height: 100%;
 }
 .post-wrapper a:hover{
     color: #006669;
@@ -196,6 +196,16 @@ header .menu-toggle{
     width: 70%;
     float: left;
 }
+.content .main-content.single{
+    background: white;
+    padding: 20px 50px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+.content .main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
 .content .main-content .post{
     width: 95%;
     height: 270px;
@@ -203,6 +213,17 @@ header .menu-toggle{
     border-radius: 5px;
     background: white;
     position: relative;
+}
+.content .popular .post{
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.content .popular .post img{
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-left: 10px;
 }
 .content .main-content .post .read-more{
     position: absolute;
@@ -236,6 +257,9 @@ header .menu-toggle{
     width: 30%;
     float: left;
     height: 300px;
+}
+.content .sidebar.single{
+    padding: 0px 10px;
 }
 .content .sidebar .section.search{
     margin-top: 80px;
@@ -275,7 +299,7 @@ header .menu-toggle{
     position: relative;
 }
 .footer .footer-content{
-    height: 350px;
+    height: 250px;
     display: flex;
 }
 .footer .footer-content .footer-section{
@@ -335,6 +359,8 @@ header .menu-toggle{
 }
 .footer .footer-content .contact-form .contact-btn{
     float: right;
+    font-size: 1.1rem;
+    font-family: 'lora' serif;
 }
 .footer .footer-bottom{
     background: #343a40;
