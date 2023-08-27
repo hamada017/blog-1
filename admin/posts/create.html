@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========= Font awesome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- =========== Google fonts============== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ======== Css ========= -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- =======cs admin side -->
+    <link rel="stylesheet" href="/css/admin.css">
+    
+    <title>Admin Add post  </title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Ham</span>BLOG</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Hamada Bachar
+                    <i class="fa fa-chevron-down" style="font-size: .8rem;"></i>
+                </a>
+                <ul>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </header>
+
+    <!-- =======Admin pages wrapper======= -->
+    <div class="admin-wrapper">
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+           <ul>
+            <li><a href="index.html">Manage Posts</a></li>
+            <li><a href="/admin/users/index.html">Manage Users</a></li>
+            <li><a href="/admin/topics/index.html">Manage Topics</a></li>
+           </ul>
+        </div>
+        <!-- Admin content -->
+        <div class="admin-content">
+            <div class="button-group">
+                <a href="create.html" class="btn btn-big">Add Post</a>
+                <a href="index.html" class="btn btn-big">Manage Posts</a>
+            </div>
+
+            <div class="content">
+                <h1 class="page-title">Manage Posts</h1>
+
+              <form action="/admin/posts/create.html" method="post">
+                <div>
+                    <label>Title</label>
+                    <input type="text"name="title" class="text-input" > 
+                </div>
+                <div>
+                    <label>Body</label>
+                    <textarea name="body" id="body"></textarea> 
+                </div> 
+                <div>
+                    <label>Image</label>
+                    <input type="file" name="image" class="text-input">
+                </div>
+                <div>
+                    <label>Topic</label>
+                    <select name="topic" class="text-input">
+                        <option value="Poetry">Poetry</option>
+                        <option value="life Lessons">Life Lessons</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-big">Add Post</button>
+                </div>
+              </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========JQuery======== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- editor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+    <!-- ===========javascript============ -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

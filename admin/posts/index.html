@@ -37,18 +37,57 @@
                     <li><a href="#" class="logout">Logout</a></li>
                 </ul>
             </li>
-        </ul>
+        </ul> 
     </header>
 
     <!-- =======Admin pages wrapper======= -->
     <div class="admin-wrapper">
         <!-- left sidebar -->
         <div class="left-sidebar">
-
+           <ul>
+            <li><a href="index.html">Manage Posts</a></li>
+            <li><a href="/admin/users/index.html">Manage Users</a></li>
+            <li><a href="/admin/topics/index.html">Manage Topics</a></li>
+           </ul>
         </div>
         <!-- Admin content -->
         <div class="admin-content">
-            
+            <div class="button-group">
+                <a href="create.html" class="btn btn-big">Add Post</a>
+                <a href="index.html" class="btn btn-big">Manage Posts</a>
+            </div>
+
+            <div class="content">
+                <h1 class="page-title">Manage Posts</h1>
+
+                <table>
+                    <thead>
+                        <th>SN</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>this is the first post</td>
+                            <td>hamada</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><a href="#" class="delete">Delete</a></td>
+                            <td><a href="#" class="publish">publish</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>This is the first post</td>
+                            <td>Djeroua</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+                            <td><a href="#" class="delete">Delete</a></td>
+                            <td><a href="#" class="publish">Publish</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
     </div>
